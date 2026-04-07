@@ -13,7 +13,11 @@ func main() {
 		log.Fatal(err)
 	}
 	lines := strings.Split(string(data), "\n")
-	for i := 0; i < 20 && i < len(lines); i++ {
-		fmt.Println(lines[i])
+
+	index := 'E' - 32
+
+	start := int(index * 9)
+	for i := 0; i < 8; i++ {
+		fmt.Println(lines[start+i])
 	}
 }
