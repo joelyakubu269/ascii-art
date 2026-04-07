@@ -5,6 +5,6 @@ import "fmt"
 func main() {
 	str := "Hello"
 	for _, r := range str {
-		fmt.Println(string(r))
+		fmt.Println(string(r)+"->", int(r))
 	}
 }
