@@ -25,5 +25,6 @@ func printChar(s string, lines []string) {
 			start := index * 9
 			fmt.Print(lines[start+i])
 		}
+		fmt.Println()
 	}
 }
