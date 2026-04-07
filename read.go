@@ -18,12 +18,12 @@ func main() {
 
 }
 func printChar(s string, lines []string) {
-	for _, r := range s {
-		index := int(r) - 32
-		start := index * 9
-		for i := 0; i < 8; i++ {
+	for i := 0; i < 8; i++ {
+
+		for _, r := range s {
+			index := int(r) - 32
+			start := index * 9
 			fmt.Print(lines[start+i])
 		}
-		fmt.Println()
 	}
 }
