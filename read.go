@@ -13,7 +13,8 @@ func main() {
 		log.Fatal(err)
 	}
 	lines := strings.Split(string(data), "\n")
-	s := "THere for\nyou"
+	s := os.Args[1]
+
 	printChar(s, lines)
 
 }
