@@ -1,10 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"os"
+	"strings"
+)
 
 func main() {
-	str := "Hello"
-	for _, r := range str {
-		fmt.Println(string(r))
+
+}
+func printC(s string) {
+	data, err := os.ReadFile("standard.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	lines := strings.Split(string(data), "\n")
+	for _, r := range s {
+		index := int(r) - 32
+		start := index * 9
+
 	}
 }
